@@ -1,0 +1,125 @@
+let uudisedBtn = document.getElementById("menubutton1");
+let infoBtn = document.getElementById("menubutton2");
+let mediaBtn = document.getElementById("menubutton3");
+let sanatBtn = document.getElementById("menubutton4");
+let contactBtn = document.getElementById("menubutton5");
+let confirmClosetBtn = document.getElementById('confirmCloseBtn');
+
+
+
+let contentUudised = document.getElementById("content-uudised");
+let contentInfo = document.getElementById("content-info");
+let contentMedia = document.getElementById("content-media");
+let contentSanat = document.getElementById("content-sanat");
+let contentContact = document.getElementById("content-contact");
+let contactConfirm = document.getElementById("contactConfirm");
+
+contentInfo.style.display = "none";
+contentMedia.style.display = "none";
+contentSanat.style.display = "none";
+contentContact.style.display = "none";
+contactConfirm.style.display = "none";
+
+uudisedBtn.addEventListener("click", () => {
+    contentInfo.style.display = "none";
+    contentMedia.style.display = "none";
+    contentSanat.style.display = "none";
+    contentUudised.style.display = "";
+    contentContact.style.display = "none";
+    uudisedBtn.classList.add("active");
+    infoBtn.classList.remove("active");
+    mediaBtn.classList.remove("active");
+    sanatBtn.classList.remove("active");
+    contactBtn.classList.remove("active");
+
+});
+
+infoBtn.addEventListener("click", () => {
+    contentInfo.style.display = "";
+    contentMedia.style.display = "none";
+    contentUudised.style.display = "none";
+    contentSanat.style.display = "none";
+    contentContact.style.display = "none";
+    uudisedBtn.classList.remove("active");
+    infoBtn.classList.add("active");
+    mediaBtn.classList.remove("active");
+    sanatBtn.classList.remove("active");
+    contactBtn.classList.remove("active");
+});
+
+mediaBtn.addEventListener("click", () => {
+    contentInfo.style.display = "none";
+    contentMedia.style.display = "";
+    contentUudised.style.display = "none";
+    contentSanat.style.display = "none";
+    contentContact.style.display = "none";
+    uudisedBtn.classList.remove("active");
+    infoBtn.classList.remove("active");
+    mediaBtn.classList.add("active");
+    sanatBtn.classList.remove("active");
+    contactBtn.classList.remove("active");
+});
+
+sanatBtn.addEventListener("click", () => {
+    contentInfo.style.display = "none";
+    contentMedia.style.display = "none";
+    contentUudised.style.display = "none";
+    contentSanat.style.display = "";
+    contentContact.style.display = "none";
+    uudisedBtn.classList.remove("active");
+    infoBtn.classList.remove("active");
+    mediaBtn.classList.remove("active");
+    sanatBtn.classList.add("active");
+    contactBtn.classList.remove("active");
+
+});
+
+contactBtn.addEventListener("click", () => {
+    contentInfo.style.display = "none";
+    contentMedia.style.display = "none";
+    contentUudised.style.display = "none";
+    contentSanat.style.display = "none";
+    contentContact.style.display = "";
+    uudisedBtn.classList.remove("active");
+    infoBtn.classList.remove("active");
+    mediaBtn.classList.remove("active");
+    sanatBtn.classList.remove("active");
+    contactBtn.classList.add("active");
+});
+
+var contactform = document.getElementById('contactform')
+contactform.addEventListener('submit', function (e) {
+    e.preventDefault()
+    var name = document.getElementById('name').value
+    var email = document.getElementById('email').value
+    var message = document.getElementById('message').value
+
+
+    /*Contact formi tööle saamiseks*/
+    fetch("https://backend.vunki.eu/mail", {
+            method: 'POST',
+            body: JSON.stringify({
+                name: name,
+                message: message,
+                email: email
+            }),
+            headers: {
+                "content-type": "application/json; charset=UTF-8"
+            }
+        })
+        .then(function (response) {
+            if (response.status == 200) {
+                console.log('Mail sent')
+                document.getElementById('contactConfirm').style.display = "block";
+            } else {
+                response.json().then(function (data) {
+                    console.log(data.error)
+                })
+            }
+        })
+    confirmClosetBtn.onclick = function () {
+        document.getElementById('contactConfirm').style.display = "none";
+
+    }
+
+})

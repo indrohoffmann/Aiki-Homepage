@@ -38,6 +38,9 @@ main {
 
 }
 
+a {
+    color:#585656
+}
 a:visited { 
     color: rgb(121, 118, 121);
   }

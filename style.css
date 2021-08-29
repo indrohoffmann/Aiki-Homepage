@@ -152,7 +152,7 @@ a:visited {
 /*AIKI vaatab pilt- kuulub põhimõtteliselt body alla*/
 
 .aikivaatab {
-    position: absolute;
+    position: fixed;
     right: -14rem;
     top: 11rem;
     height: 40rem;

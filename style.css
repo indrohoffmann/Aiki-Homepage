@@ -280,24 +280,25 @@ a:visited {
     grid-template-rows: 110px 110px 110px 110px 110px;*/
 }
 
-#content-media iframe {
-    display: block;
-    width: 99%;
-    height: 20rem;
-
-    border: #663311 0.1px solid;
-    margin: 1rem auto;
-}
-
-#content-media .responsive-iframe-media iframe {
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
+.videoContainer {
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
 }
+
+.mediaVideo {
+        
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        border:rgb(44, 43, 43) 0.1px solid;
+    }
+
 
 .galerii {
     color: white;
@@ -325,14 +326,15 @@ a:visited {
 }
 
 .aikiprofiil {
-    width: 70%;
+    width: 50%;
+   
     /*height: 50px;
     width: 75px;
     min-height: 100%;*/
 }
 
 .aikipurje3 {
-    width: 70%;
+    width: 65%;
     /*height: 50px;
     width: 75px;
     min-height: 100%;
@@ -809,7 +811,24 @@ input {
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: 110px 110px 110px 110px 110px;
     }
+.videoContainer {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
+    
+}
 
+    .mediaVideo {
+        border:rgb(44, 43, 43) 0.1px solid;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
     .aikitamburiin {
         height: 26rem;
         width: 18rem;

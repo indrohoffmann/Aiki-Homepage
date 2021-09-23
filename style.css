@@ -482,7 +482,7 @@ input {
 }
 
 #contactConfirm {
-    display: block;
+    display: none;
     position: fixed;
     width: 99.5%;
     height: 100vh;

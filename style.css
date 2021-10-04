@@ -47,7 +47,7 @@ a:visited {
 
 /*NAV HEADER and main menu stuff*/
 
-.header {
+.container {
 
     padding-left: 8rem;
     width: 100%;
@@ -229,7 +229,7 @@ a:visited {
     margin: 1rem auto;
 }
 
-.container {
+.containerVideo {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -729,7 +729,7 @@ input {
         height: 105vh;
     }
 
-    .header {
+    .container {
         align-items: center;
         text-align: center;
         margin-bottom: 0;

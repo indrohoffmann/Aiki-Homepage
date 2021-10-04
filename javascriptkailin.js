@@ -19,6 +19,12 @@ let contactConfirm = document.getElementById("contactConfirm");
 var menuBtn = document.getElementById('menuBtn');
 var menu = document.getElementById('menu');
 var closeMenuBtn = document.getElementById('closeMenuBtn');
+var menuBtn1 = document.getElementById('menubutton1');
+var menuBtn2 = document.getElementById('menubutton2');
+var menuBtn3 = document.getElementById('menubutton3');
+var menuBtn4 = document.getElementById('menubutton4');
+var menuBtn5 = document.getElementById('menubutton5');
+
 
 // Menu button click event handler
 menuBtn.onclick = function() {
@@ -29,6 +35,26 @@ menuBtn.onclick = function() {
 closeMenuBtn.onclick = function() {
     menu.classList.remove('show');
 };
+
+menuBtn1.onclick = function() {
+    menu.classList.remove('show');
+}
+
+menuBtn2.onclick = function() {
+    menu.classList.remove('show');
+}
+
+menuBtn3.onclick = function() {
+    menu.classList.remove('show');
+}
+
+menuBtn4.onclick = function() {
+    menu.classList.remove('show');
+}
+
+menuBtn5.onclick = function() {
+    menu.classList.remove('show');
+}
 
 
 

@@ -732,6 +732,10 @@ input {
     #menuBtn {
         background-image: url('media/icon-menu.svg');
         margin-right: 1rem;
+        position: absolute;
+        right: 1.5rem;
+        top: 2.5rem;
+        
     }
     
     #closeMenuBtn {

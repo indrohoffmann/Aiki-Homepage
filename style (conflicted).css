@@ -775,7 +775,6 @@ input {
         left: 0;
     }
     #menu {
-        
         background-color: rgb(10, 10, 10);
         position: absolute;
         border: blue 1px solid;
@@ -791,33 +790,31 @@ input {
     }
 
     #menu ul {
-       height: 40%;
-        width: 70%;
+      
+        width: 50%;
         text-align: center;
         justify-content: center;
         align-items: center;
-     background: none;
+     background: chartreuse;
      margin:auto; 
-   margin-top: 13rem;
+     
     }
 
     #menu ul li{
       
-      padding-bottom: 4rem;
+      
         background: none;
-        margin: auto;
+        margin: auto 10rem;
     }
 
     #menu ul li p {
-        
+       
         margin:auto -10rem; 
-        margin-top: 0rem;
         font-size: 50px;
     }
 
    nav {
        display: block;
-       
      
        
        
@@ -830,9 +827,8 @@ input {
    #menubutton3,
    #menubutton4,
    #menubutton5 {
-       
        position: relative;
-     
+       background: none;
        display:block;
        width: 110px;
        height: 35px;
@@ -857,8 +853,7 @@ input {
        border-left: none;
        /*transition-duration: 0.1s;*/
        cursor: pointer;
-       margin:auto -10rem; 
-       margin-top: 13rem;
+   
    }
 
     .leftBanner {
@@ -994,3 +989,4 @@ input {
 
     }
 
+}

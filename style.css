@@ -741,7 +741,7 @@ input {
     #closeMenuBtn {
         position: absolute;
         top: 2.5rem;
-        right: 1rem;
+        right: 2rem;
         background-image: url('media/icon-close.svg');
     }
     
@@ -775,15 +775,15 @@ input {
         left: 0;
     }
     #menu {
-        
+       
         background-color: rgb(10, 10, 10);
         position: absolute;
-        border: blue 1px solid;
+        border: none;
         height: 105%;
         width: 100%;
         z-index: 1000;
      left:-50rem;
-     /*transition:left.5s;*/
+     transition:left.5s;
      text-align: center;
      text-align: center;
         justify-content: center;
@@ -877,6 +877,11 @@ input {
         display: none;
     }
 
+    #mobileMenuLogo {
+        
+        margin: auto 3rem;
+        position:fixed;
+    }
    
 
     .active {

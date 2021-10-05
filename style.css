@@ -874,12 +874,16 @@ input {
     }
 
     #tekst {
-        display: none;
+        display: block;
+    width: 15rem;
+    margin-left: -8rem;
+   opacity: 0.3;
+   padding-top: 0.5rem;
     }
 
     #mobileMenuLogo {
-        
-        margin: auto 3rem;
+    display: block;
+        margin: 2rem 3rem;
         position:fixed;
     }
    
@@ -998,4 +1002,15 @@ input {
         align-items: center;
 
     }
+    .menuOsa {
+     
+      
+        
+        
+        
+       
+    }
 
+    .logo {
+        margin-left: -6rem;
+    }

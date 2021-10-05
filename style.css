@@ -777,7 +777,7 @@ input {
     #menu {
        
         background-color: rgb(10, 10, 10);
-        position: absolute;
+        position: fixed;
         border: none;
         height: 105%;
         width: 100%;

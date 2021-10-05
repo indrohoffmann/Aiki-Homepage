@@ -741,7 +741,7 @@ input {
     #closeMenuBtn {
         position: absolute;
         top: 2.5rem;
-        right: 2rem;
+        right: 1rem;
         background-image: url('media/icon-close.svg');
     }
     
@@ -775,15 +775,14 @@ input {
         left: 0;
     }
     #menu {
-       
         background-color: rgb(10, 10, 10);
         position: absolute;
-        border: none;
+        border: blue 1px solid;
         height: 105%;
         width: 100%;
         z-index: 1000;
      left:-50rem;
-     transition:left.5s;
+     /*transition:left.5s;*/
      text-align: center;
      text-align: center;
         justify-content: center;
@@ -791,33 +790,31 @@ input {
     }
 
     #menu ul {
-       height: 40%;
-        width: 70%;
+      
+        width: 50%;
         text-align: center;
         justify-content: center;
         align-items: center;
-     background: none;
+     background: chartreuse;
      margin:auto; 
-   margin-top: 13rem;
+     
     }
 
     #menu ul li{
       
-      padding-bottom: 4rem;
+      
         background: none;
-        margin: auto;
+        margin: auto 10rem;
     }
 
     #menu ul li p {
-        
+       
         margin:auto -10rem; 
-        margin-top: 0rem;
         font-size: 50px;
     }
 
    nav {
        display: block;
-       
      
        
        
@@ -830,9 +827,8 @@ input {
    #menubutton3,
    #menubutton4,
    #menubutton5 {
-       
        position: relative;
-     
+       background: none;
        display:block;
        width: 110px;
        height: 35px;
@@ -857,8 +853,7 @@ input {
        border-left: none;
        /*transition-duration: 0.1s;*/
        cursor: pointer;
-       margin:auto -10rem; 
-       margin-top: 13rem;
+   
    }
 
     .leftBanner {
@@ -877,11 +872,6 @@ input {
         display: none;
     }
 
-    #mobileMenuLogo {
-        
-        margin: auto 3rem;
-        position:fixed;
-    }
    
 
     .active {
@@ -999,3 +989,4 @@ input {
 
     }
 
+}

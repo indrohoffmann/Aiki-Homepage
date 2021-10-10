@@ -176,8 +176,8 @@ a:visited {
 /*AIKI vaatab pilt- kuulub põhimõtteliselt body alla*/
 
 .aikivaatab {
-    position: fixed;
-    right: -14rem;
+    position: absolute;
+    right:0;
     top: 11rem;
     height: 40rem;
     opacity: 0.5;

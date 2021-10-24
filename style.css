@@ -266,6 +266,7 @@ a:visited {
 }
 
 .media-container {
+    
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -298,7 +299,7 @@ a:visited {
 #content-media {
     height: 99%;
     overflow-y: auto;
-    display: block;
+    display: grid;
     margin: 0px 0px;
     padding-right: 0.5rem;
     /*display: grid;

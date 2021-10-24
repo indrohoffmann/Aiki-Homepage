@@ -843,7 +843,9 @@ input {
    #menubutton2,
    #menubutton3,
    #menubutton4,
-   #menubutton5 {
+   #menubutton5,
+   #menubutton6,
+   #menubutton7 {
        
        position: relative;
      

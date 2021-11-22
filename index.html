@@ -17,8 +17,6 @@
 </head>
 
 <body>
-
-
     <main>
         <div id="contactConfirm">
             <div id="thanks">
@@ -27,58 +25,76 @@
             </div>
         </div>
 
-<header>
+        <header>
 
-        <div class="menuOsa">
-            <div class="container">
-                <button type="button" id="menuBtn" class="hidden-desktop">Menu</button>
+            <div class="menuOsa">
+          
+                <div class="container">
+                    
+                    <button type="button" id="menuBtn" class="hidden-desktop">Menu</button>
+                </div>
+                <a href=""><img class="logo" src="media/logo2.png"></a>
+            
+            
+                <img id="tekst" src="/media/tekst.png">
+                    <!--Siia peaks siis aiki kirjana kirjutama kunagi-->
+                    <!-- <img class="logo" src="media/aikiaiki3.png">-->
+
+
+                    <nav id="menu">
+                        <div id="mobileMenuLogo" class="hidden-desktop"><a href=""><img  src="media/logo2.png"></a></div>
+                        <button type="button" id="closeMenuBtn" class="hidden-desktop">Close menu</button>
+                    <ul>
+                        <li id="menubutton1" class="active"><p>Home</p></li>
+                        <li id="menubutton6"><p>Christmas</p></li>
+                        <li id="menubutton2"><p>Aiki</p></li>
+                        <li id="menubutton3"><p>Gallery</p></li>
+                        <li id="menubutton7"><p>Video</p></li>
+                        <li id="menubutton4"><p>Lyrics</p></li>
+                        <li id="menubutton5"><p>Contact</p></li>
+                    </ul>
+                    </nav>
             </div>
-            <a href=""><img class="logo" src="media/logo2.png"></a>
+        </header>
 
-        <img id="tekst" src="/media/tekst.png">
-            <!--Siia peaks siis aiki kirjana kirjutama kunagi-->
-            <!-- <img class="logo" src="media/aikiaiki3.png">-->
-
-
-            <nav id="menu">
-                <div id="mobileMenuLogo" class="hidden-desktop"><a href=""><img  src="media/logo2.png"></a></div>
-                <button type="button" id="closeMenuBtn" class="hidden-desktop">Close menu</button>
-            <ul>
-                <li id="menubutton1" class="active"><p>Home</p></li>
-                <li id="menubutton6"><p>Christmas</p></li>
-                <li id="menubutton2"><p>Aiki</p></li>
-                <li id="menubutton3"><p>Gallery</p></li>
-                <li id="menubutton7"><p>Video</p></li>
-                <li id="menubutton4"><p>Lyrics</p></li>
-                <li id="menubutton5"><p>Contact</p></li>
-            </ul>
-            </nav>
-        </div>
-      
-    </header>
 
         <div id="contentbox">
 
-            <div class="leftBanner">
-                <img class="leftBanner" src="/media/teisitibanner.png" />
+            <div>
+                <img id="leftBanner" src="/media/Cristmas smaller.png" />
             </div>
 
             <div class="infobox">
 
                 <div id="content-uudised">
 
+
+                    <h6 class="dateFirst">Posted 20.11.2021
+                        Saturday</h6>
+                    <p><strong>Maaginen</strong>  joulutunnelma musiikin välityksellä. Aiki & kitara -joulumusiikkiesitys 
+                        tuo maagisen joulutunnelman 
+                        toimistolle, pikkujouluihin, 
+                        kotiin tai sinne missä ikinä haluatkaan musiikista nauttia.  
+                    </p>
+                    <img class="feedimage"src="media/Aiki video thumbnail2.png">
+                    <br>
+                    <!--Container for video on feed to be a respnsive-->
+                   
+    
+                    <br>
+
                   <h6 class="dateFirst">Posted 27.8.2021
                     Friday</h6>
                 <p><strong>New</strong> song "Teisiti ei saakski" is out now!!!
                 </p>
-<br>
+                <br>
                 <!--Container for video on feed to be a respnsive-->
                 <div class="containerVideo">
                     <iframe class="responsive-iframe" src="https://www.youtube.com/embed/oRMtSPLvAII" allowfullscreen></iframe>
                         
                 </div>
 
-<br>
+                <br>
 
                     <h6 class="dateFirst">Posted 24.8.2021
                         Tuesday</h6>
@@ -90,7 +106,7 @@
 
                     <img id="arabianCuban" src="/media/arabianCuban.jpg" alt="The Arabian Cuban Nights poster">
 
-<br>
+                <br>
 
                     <h6 class="dateFirst">Posted 27.7.2021
                         Tuesday</h6>
@@ -128,16 +144,26 @@
                         „Wannabe“ from Spice Girls and more surprises. :)
                     </p>
 
+
                     <video id="videoproov" width="360" height="220" controls>
                         <source src="/media/videoproov.mp4" type=video/mp4> </video> </div> 
 
 
-                        <div id="content-christmas">
-                          
-                            <img src="/media/Aiki joulu video thumbnail homepage.png" id="aikijoul">
+                        <div id="content-christmas" href>
                             
+                         <p id="chr-text"><strong>The</strong> Christmas set includes about 30-40 minutes of acoustic music (guitar & singing). Turning the audition you can hear the most known Christmas songs and also other beutiful songs whitch are creating a pleasant mood for your Christmas event. Jingle Bells, Last Christmas, Wonderful tonight, Dance with somebody and many others. Performance also includes equipment for the audition (EP speakers etc.).<br><br>
+                            Price 150€<br>
+                            Booking and additional information from Contact or +358405182311<br>(suomi, english, estonia)
+                            </p>
+                            <div class ="videoContainer">
+                                <video id="videoproov" width="100%" poster="/media/Aiki joulu video thumbnail parandatud tekstiga.png" controls>
+                                    <source src="/media/Aiki_joulu.mp4" type=video/mp4> </video>
+                                </div>
+                                
+                       
+        
                         </div>
-
+    
                         <div id="content-info">
 
 
@@ -152,30 +178,16 @@
                 </div>
 
 
+
+
+
                 <div id="content-media">
                     <div class="media-container"></div>
-
-
-                    
-
                     <div class="galerii pilt1"><img src="/media/aikikitarr.jpg" class="aikikitarr"></div>
-
-                   
-                    
                     <div class="galerii pilt2"><img src="/media/aikisynt.jpg" class="aikisynt"></div>
-
-                    
-
                     <div class="galerii pilt3"><img src="/media/aikitamburiin.jpg" class="aikitamburiin"></div>
-
-                    
                     <div class="galerii pilt4"><img src="/media/aikiprofiil.jpg" class="aikiprofiil"></div>
-
-                    
-
                     <div class="galerii pilt5"></div>
-
-                    
                     <!--<div class="galerii pilt6">6.</div>
                 <div class="galerii pilt7">7.</div>
                 <div class="galerii pilt8">8.</div>
@@ -189,6 +201,10 @@
                     <img src="aikikitarr.jpg" class="aikikitarr">
                 <img src="aikisynt.jpg" class="aikisynt">-->
                 </div>
+
+
+
+
 
                 <div id="content-videos">
                     <div class ="videoContainer">
@@ -265,9 +281,9 @@
                 <iframe class="video5" src="https://www.youtube.com/embed/8jzvqdqa6YA" allowfullscreen></iframe>
             </div>
 
-            <img id="aikirongad" src="/media/Aikirongad.png">
+            
             <img src="/media/aikivaatablyhempng.png" class="aikivaatab">
-
+            <img id="aikirongad" src="/media/Aikirongad.png">
         </div>
 
 

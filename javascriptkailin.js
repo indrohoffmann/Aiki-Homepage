@@ -6,6 +6,7 @@ let contactBtn = document.getElementById("menubutton5");
 let christmasBtn = document.getElementById("menubutton6");
 let videosBtn = document.getElementById("menubutton7");
 let confirmClosetBtn = document.getElementById('confirmCloseBtn');
+let chrpic = document.getElementById('leftBanner')
 
 
 
@@ -30,12 +31,16 @@ var menuBtn4 = document.getElementById('menubutton4');
 var menuBtn5 = document.getElementById('menubutton5');
 var menuBtn6 = document.getElementById('menubutton6');
 var menuBtn7 = document.getElementById('menubutton7');
+var chrbutton = document.getElementById('leftBanner');
 
 
 // Menu button click event handler
 menuBtn.onclick = function() {
     menu.classList.add('show');
 };
+chrbutton.onclick = function() {
+    menu.classList.remove('show')
+}
 
 // Close menu button click event handler
 closeMenuBtn.onclick = function() {
@@ -97,6 +102,25 @@ uudisedBtn.addEventListener("click", () => {
     contactBtn.classList.remove("active");
 
 });
+
+chrpic.addEventListener("click", () => {
+    contentInfo.style.display = "none";
+    contentChristmas.style.display = "";
+    contentMedia.style.display = "none";
+    contentUudised.style.display = "none";
+    contentVideos.style.display = "none";
+    contentSanat.style.display = "none";
+    contentContact.style.display = "none";
+    uudisedBtn.classList.remove("active");
+    christmasBtn.classList.add("active");
+    infoBtn.classList.remove("active");
+    mediaBtn.classList.remove("active");
+    videosBtn.classList.remove("active");
+    sanatBtn.classList.remove("active");
+    contactBtn.classList.remove("active");
+
+});
+
 
 christmasBtn.addEventListener("click", () => {
     contentInfo.style.display = "none";

@@ -205,6 +205,9 @@ a:visited {
     z-index: 1;
     border-radius: 3px;
 }
+#leftBanner:hover{
+cursor: pointer;
+}
 
 /*AIKI vaatab pilt- kuulub põhimõtteliselt body alla*/
 
@@ -415,6 +418,7 @@ z-index: 11;
     width: 100%;
     min-height: 100%;
 }
+
 
 .aikitamburiin {
     width: 70%;
@@ -754,6 +758,8 @@ input {
         border-radius: 3px;
     }
 
+    
+
 
     .infobox {
         margin-right: 3rem;
@@ -776,7 +782,8 @@ input {
         border-radius: 3px;
 
     }
-
+    
+   
     #menu {
         position: relative;
         display: block;

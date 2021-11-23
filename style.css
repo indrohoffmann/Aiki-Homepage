@@ -260,7 +260,7 @@ cursor: pointer;
 
 
 
-.feedimage {
+#feedimage {
     position: relative;
     overflow: hidden;
     width: 100%;
@@ -268,6 +268,10 @@ cursor: pointer;
     /* 16:9 Aspect Ratio (divide 9 by 16 = 0.5625) */
     margin-bottom: 2rem;
     opacity: 0.8;
+}
+
+#feedimage:hover {
+    cursor: pointer;
 }
 
 #content-christmas {
@@ -788,6 +792,7 @@ input {
     }
 
     .aikivideodbox {
+        display: none;
         margin: auto 20rem;
         margin-top: 6rem;
         width: 35rem;
@@ -835,6 +840,10 @@ input {
     #message {
         width: 100%;
         height: 10rem;
+    }
+
+    #menubutton7 {
+        margin-left: 4rem;
     }
 
 }

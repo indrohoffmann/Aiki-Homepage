@@ -35,8 +35,8 @@ var menuBtn7 = document.getElementById('menubutton7');
 //for making left banner to open christmas area
 var chrbutton = document.getElementById('leftBanner');
 //for making word "contact form" in christmas page to open contact form page
-var wordbutton =document.getElementById('wordContact');
-
+var wordbutton = document.getElementById('wordContact');
+var feedimage = document.getElementById('feedimage')
 
 // Menu button click event handler
 menuBtn.onclick = function() {
@@ -83,6 +83,10 @@ chrbutton.onclick = function() {
 
 //for making word "contact form" in christmas page to open contact form page
 wordbutton.onclick = function() {
+    menu.classList.remove('show')
+}
+
+feedimage.onclick = function() {
     menu.classList.remove('show')
 }
 
@@ -254,6 +258,25 @@ wordbutton.addEventListener("click", () => {
     sanatBtn.classList.remove("active");
     contactBtn.classList.add("active");
 });
+
+feedimage.addEventListener("click", () => {
+    contentInfo.style.display = "none";
+    contentChristmas.style.display = "";
+    contentMedia.style.display = "none";
+    contentUudised.style.display = "none";
+    contentVideos.style.display = "none";
+    contentSanat.style.display = "none";
+    contentContact.style.display = "none";
+    uudisedBtn.classList.remove("active");
+    christmasBtn.classList.add("active");
+    infoBtn.classList.remove("active");
+    mediaBtn.classList.remove("active");
+    videosBtn.classList.remove("active");
+    sanatBtn.classList.remove("active");
+    contactBtn.classList.remove("active");
+
+});
+
 
 var contactform = document.getElementById('contactform')
 contactform.addEventListener('submit', function (e) {

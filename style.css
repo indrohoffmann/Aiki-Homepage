@@ -801,8 +801,9 @@ input {
     #leftBanner {
         position: fixed;
         width: 14rem;
-        left: 2rem;
-        top: 15rem;
+        height: auto;
+        left: 1.5rem;
+        top: 19rem;
         z-index: 1;
         border-radius: 3px;
 

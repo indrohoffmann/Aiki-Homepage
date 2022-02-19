@@ -133,13 +133,13 @@ a:visited {
 }
 
 #menubutton6 {
+    
     position: relative;
     background: rgb(3, 3, 3);
     background: linear-gradient(161deg, rgba(3, 3, 3, 1) 67%, rgba(83, 22, 22, 1) 100%);
-    display: inline-block;
     width: 120px;
     height: 35px;
-    display: inline-block;
+    display: none;
     font-family: 'Lato', sans-serif;
     text-decoration: none;
     text-align: center;
@@ -199,6 +199,7 @@ a:visited {
 
 /*Reklaami ja kuulutuste ala väljaspool infoboxi*/
 #leftBanner {
+    display: none;
     position: fixed;
     width: 19rem;
     height:22.5rem;
@@ -816,7 +817,7 @@ input {
         margin: auto;
         margin-bottom: 5rem;
         border: none;
-        width: 29rem;
+        width: 48rem;
         height: 50px;
         left: -76px;
         top: 0px;
@@ -843,9 +844,7 @@ input {
         height: 10rem;
     }
 
-    #menubutton7 {
-        margin-left: 4rem;
-    }
+   
 
 }
 
